@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Horarios de la escuela</h1>
+    <label for="">Biología</label>
+    <input type="text" id="Biología"><br>
+    <label for="">Inglés</label>
+    <input type="text" id="Inglés"><br>
+    <label for="">Historia</label>
+    <input type="text" id="Historia"><br>
+    <button onclick="mostrarhorariolunes()">Lunes</button>
+    <button onclick="mostrarhorariomartes()">Martes</button>
+    <button onclick="mostrarhorariomiercoles()">Miércoles</button>
+
+    <script>
+        function mostrarhorariolunes (){
+             document.getElementById("Biología").value= "08:00-09:00";
+            document.getElementById("Inglés").value= "09;00-10:00";
+            document.getElementById("Historia").value="10:00 11;00";
+
+        }
+           
+         function mostrarhorariomartes (){
+              document.getElementById("Biología").value="09:00-10:00";
+            document.getElementById("Inglés").value="08;00-09:00";
+            document.getElementById("Historia").value="10:00-11;00";
+
+         }
+          
+         function mostrarhorariomiercoles (){
+             document.getElementById("Biología").value="09:00-10:00";
+            document.getElementById("Inglés").value="10;00-11:00";
+            document.getElementById("Historia").value="08:00-09;00";
+        
+         }
+            
+        
+        
+        
+    </script>
+
+</body>
+</html>
